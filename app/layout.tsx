@@ -19,7 +19,6 @@ export default function RootLayout({ children }: { children: ReactNode }) {
             </Link>
             <Link href="/posts/hello-world">サンプル記事へ</Link>
           </nav>
-          ++
         </header>
 
         <main className="flex-1 max-w-4xl mx-auto p-4">{children}</main>

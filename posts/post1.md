@@ -2,6 +2,8 @@
 title: 'Markdownのサンプル投稿'
 date: '2025-06-05'
 slug: 'markdown-sample'
+summary: 'この記事はMarkdownで書かれたサンプル記事の概要です。'
+thumbnail: '/images/img1.jpg' # public/imagesに置く想定
 ---
 
 # Markdownの表示テスト

@@ -24,3 +24,9 @@ body {
   color: var(--foreground);
   font-family: Arial, Helvetica, sans-serif; */
 }
+
+.prose-img-style img {
+  @apply mx-auto rounded-lg shadow-md;
+  max-width: 100%;
+  height: auto;
+}
