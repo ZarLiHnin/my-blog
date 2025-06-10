@@ -1,6 +1,6 @@
 ---
 title: '東京の早朝ランニングで感じたこと'
-date: '2025-04-22'
+date: '2025-06-08'
 slug: 'tokyo-morning'
 summary: '渋谷から代々木公園へ。朝6時の東京は、まるで別世界のようだった。'
 thumbnail: '/images/tokyo-morning.jpg'

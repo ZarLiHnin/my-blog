@@ -1,6 +1,6 @@
 ---
 title: 'ウクレレの魅力と始め方：手軽に楽しめる癒しの楽器'
-date: '2025-06-08'
+date: '2025-05-08'
 slug: 'ukulelefun'
 summary: '初心者におすすめのウクレレの魅力と練習法について紹介します。'
 thumbnail: '/images/ukulelefun.jpeg'

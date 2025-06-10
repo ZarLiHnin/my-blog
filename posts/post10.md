@@ -1,6 +1,6 @@
 ---
 title: 'ギター初心者向けガイド：始める前に知っておきたいこと'
-date: '2025-06-09'
+date: '2025-05-09'
 slug: 'guitar'
 summary: 'ギターを始めたい方のために、種類、必要な道具、練習のポイントなどを解説します。'
 thumbnail: '/images/guitar.jpeg'

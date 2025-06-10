@@ -1,6 +1,6 @@
 ---
 title: 'AI vs 人間：創造性の限界はどこにある？'
-date: '2025-05-10'
+date: '2025-06-10'
 slug: 'ai'
 summary: 'AIが詩や音楽、コードを書く時代。では人間の役割は？創造性と感性の境界線を考える。'
 thumbnail: '/images/ai-vs-human.jpeg'
