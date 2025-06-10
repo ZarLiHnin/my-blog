@@ -11,6 +11,8 @@ type PostData = {
   title: string;
   date: string;
   contentHtml: string;
+  category?: string;
+  tags?: string[];
 };
 
 export async function getPostData(slug: string): Promise<PostData> {
@@ -31,7 +33,7 @@ export async function getPostData(slug: string): Promise<PostData> {
 }
 
 export function getSortedPostsData() {
-  const fileNames = fs.readdirSync(postsDirectory);
+  const fileNames = fs.readdirSync(postsDirectory).filter((file) => file.endsWith('.md'));
   const allPostsData = fileNames.map((fileName) => {
     const slug = fileName.replace(/\.md$/, '');
     const fullPath = path.join(postsDirectory, fileName);
@@ -45,6 +47,8 @@ export function getSortedPostsData() {
       date: data.date,
       summary: data.summary ?? '',
       thumbnail: data.thumbnail ?? '',
+      category: data.category ?? '',
+      tags: data.tags ?? [],
     };
   });
 
@@ -53,8 +57,21 @@ export function getSortedPostsData() {
 }
 
 export function getAllPostSlugs() {
-  const fileNames = fs.readdirSync(postsDirectory);
+  const fileNames = fs.readdirSync(postsDirectory).filter((file) => file.endsWith('.md'));
+
   return fileNames.map((fileName) => ({
     slug: fileName.replace(/\.md$/, ''),
   }));
+}
+
+// すべてのタグ一覧を取得
+export function getAllTags(posts: PostData[]) {
+  const tags = posts.flatMap((post) => post.tags || []);
+  return Array.from(new Set(tags));
+}
+
+// カテゴリ一覧を取得
+export function getAllCategories(posts: PostData[]) {
+  const categories = posts.map((post) => post.category);
+  return Array.from(new Set(categories));
 }

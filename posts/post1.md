@@ -1,36 +1,20 @@
 ---
-title: 'Markdownのサンプル投稿'
-date: '2025-06-05'
-slug: 'markdown-sample'
-summary: 'この記事はMarkdownで書かれたサンプル記事の概要です。'
-thumbnail: '/images/img1.jpg' # public/imagesに置く想定
+title: 'はじめてのNext.jsブログ'
+date: '2025-06-01'
+slug: 'hello-world'
+summary: 'Next.jsを使った最初のブログ投稿です。基本的なセットアップと使い方を紹介します。'
+thumbnail: '/images/nextjs.jpg'
+category: '技術'
+tags: ['Next.js', 'React', 'coder']
 ---
 
-# Markdownの表示テスト
+Next.jsでブログを作成するのはとても楽しいです！  
+ここではセットアップから記事の書き方まで簡単に紹介します。
 
-これは **Markdown** の表示を確認するためのサンプル投稿です。Tailwind CSS の Typography プラグインが正しく動作していれば、美しいスタイルが自動的に適用されます。
+## Next.jsの特徴
 
-## セクション: リスト
+- SSR（サーバーサイドレンダリング）が簡単に使える
+- 静的サイト生成もサポート
+- APIルートが便利
 
-- アイテム 1
-- アイテム 2
-  - ネストされたアイテム
-- アイテム 3
-
-## セクション: 番号付きリスト
-
-1. ステップ 1
-2. ステップ 2
-3. ステップ 3
-
-## セクション: コード
-
-インラインコード：`console.log('Hello World')`
-
-コードブロック：
-
-```ts
-function greet(name: string): string {
-  return `Hello, ${name}`;
-}
-```
+これからどんどん記事を書いていきます！

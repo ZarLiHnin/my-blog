@@ -1,17 +1,23 @@
 ---
-title: 'もっと新しい投稿2'
-date: '2025-06-02'
-slug: 'newer-post2'
-summary: '2この記事はMarkdownで書かれたサンプル記事の概要です。'
-thumbnail: '/images/img2.jpeg' # public/imagesに置く想定
+title: 'Markdownで記事を書く方法'
+date: '2025-06-03'
+slug: 'markdown-basics'
+summary: 'Markdown形式で記事を書く基本を解説。シンプルでわかりやすい書き方を紹介します。'
+thumbnail: '/images/markdown.jpg'
+category: '技術'
+tags: ['Markdown', 'HTML', 'coder']
 ---
 
-これは一番新しい投稿です。
+Markdownはブログ記事を書くのに最適なフォーマットです。  
+テキストベースなので軽量で、見た目もわかりやすいのが特徴です。
 
-# 画像のテスト
+### 見出しの書き方
 
-これは画像表示のテストです。
+`#` を使うことで簡単に見出しが作れます。
 
-![プロフィール写真](/images/profile.jpg)
+### リストの例
 
-![外部画像](https://www.google.com/url?sa=i&url=https%3A%2F%2Franking.net%2Frankings%2Fbest-kawaii-female-anime-characters&psig=AOvVaw0yIeuhqjiuNzA9aNa39Peh&ust=1749286585880000&source=images&cd=vfe&opi=89978449&ved=0CBQQjRxqFwoTCLCW1cC23I0DFQAAAAAdAAAAABBR)
+- 箇条書き
+- 番号付きリスト
+
+ぜひ使ってみてください！

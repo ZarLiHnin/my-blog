@@ -1,9 +1,19 @@
 ---
-title: 'もっと新しい投稿'
-date: '2025-06-10'
-slug: 'newer-post'
-summary: '3この記事はMarkdownで書かれたサンプル記事の概要です。'
-thumbnail: '/images/img3.jpg' # public/imagesに置く想定
+title: 'Next.jsで動的ルーティングを使う'
+date: '2025-06-07'
+slug: 'dynamic-routing'
+summary: 'Next.jsの動的ルーティング機能を使って、柔軟なURL設計を行う方法を説明します。'
+thumbnail: '/images/static.jpeg'
+category: '技術'
+tags: ['getstaticpaths', 'slug', 'Next.js', 'React', 'coder']
 ---
 
-これは一番新しい投稿です。
+動的ルーティングはブログやECサイトでよく使われる機能です。  
+URLパラメータを使って、記事ごとに異なるページを生成します。
+
+```tsx
+// 例: [slug].tsx ファイルの一部
+export async function getStaticPaths() {
+  // パスを指定
+}
+```
