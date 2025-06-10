@@ -1,14 +1,13 @@
-import ArticleCard from '@/components/ArticleCard';
 import { getSortedPostsData } from '@/lib/posts';
+import ArticleCard from '@/components/ArticleCard';
 
-export async function generateStaticParams() {
-  const posts = getSortedPostsData();
-  const tags = Array.from(new Set(posts.flatMap((p) => p.tags || [])));
-  return tags.map((tag) => ({ tag: encodeURIComponent(tag) })); // ✅ エンコード
-}
+type Props = {
+  params: Promise<{ tag: string }>;
+};
 
-export default function TagPage({ params }: { params: { tag: string } }) {
-  const decodedTag = decodeURIComponent(params.tag); // ✅ デコード
+export default async function TagPage({ params }: Props) {
+  const resolvedParams = await params;
+  const decodedTag = decodeURIComponent(resolvedParams.tag);
   const posts = getSortedPostsData().filter((post) => post.tags?.includes(decodedTag));
 
   return (

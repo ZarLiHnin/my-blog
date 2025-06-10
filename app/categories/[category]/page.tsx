@@ -1,14 +1,13 @@
 import { getSortedPostsData } from '@/lib/posts';
 import ArticleCard from '@/components/ArticleCard';
 
-export async function generateStaticParams() {
-  const posts = getSortedPostsData();
-  const categories = Array.from(new Set(posts.map((p) => p.category)));
-  return categories.map((category) => ({ category: encodeURIComponent(category) })); // ✅ エンコード
-}
+type Props = {
+  params: Promise<{ category: string }>;
+};
 
-export default function CategoryPage({ params }: { params: { category: string } }) {
-  const decodedCategory = decodeURIComponent(params.category); // ✅ デコード
+export default async function CategoryPage({ params }: Props) {
+  const resolvedParams = await params;
+  const decodedCategory = decodeURIComponent(resolvedParams.category);
   const posts = getSortedPostsData().filter((post) => post.category === decodedCategory);
 
   return (

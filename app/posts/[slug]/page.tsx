@@ -4,7 +4,7 @@ import ArticleListClient from '@/components/ArticleListClient';
 import Image from 'next/image';
 
 type Props = {
-  params: { slug: string };
+  params: Promise<{ slug: string }>;
 };
 
 export async function generateStaticParams() {
@@ -12,7 +12,8 @@ export async function generateStaticParams() {
 }
 
 export default async function PostPage({ params }: Props) {
-  const post = await getPostData(params.slug);
+  const resolvedParams = await params;
+  const post = await getPostData(resolvedParams.slug);
 
   if (!post) {
     return notFound();
@@ -52,7 +53,7 @@ export default async function PostPage({ params }: Props) {
                   Zar Li Hnin
                 </p>
                 <p className="text-sm text-gray-600 dark:text-gray-400 mt-1">
-                  フロントエンドエンジニア / ブロガー
+                  ITエンジニア / ブロガー
                 </p>
               </div>
             </div>
